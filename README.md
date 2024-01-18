@@ -1,2 +1,3 @@
 # dotfiles
-leaked porn photos :blush:
+catppuccin themed setup
+i might make an installer later on
