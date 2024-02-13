@@ -5,3 +5,4 @@ if status is-interactive
     alias clear='/usr/bin/clear && fish_greeting'
     starship init fish | source
 end
+alias nvim=lvim
