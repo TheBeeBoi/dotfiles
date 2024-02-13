@@ -13,3 +13,5 @@ GTK theme: Graphite with the nord tweak. Get it from [here](https://github.com/v
 Firefox theme: [Cascade but with the Nord include](https://github.com/cascadefox/cascade)
  
 (basically just use cascade but in the repo, before copying the chrome folder, `cp integrations/nord/nord.css chrome/includes/cascade-colours.css`)
+
+i'm very lazy, but i care about you guys. so please make issues. if you're in my timezone i'll be responding in around 30 minutes max.
