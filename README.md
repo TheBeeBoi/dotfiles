@@ -9,3 +9,7 @@ you will also need brightnessctl, cava, hyprland, iw (wifi), wl-gammarelay-rs (f
 music player: Amberol
 
 GTK theme: Graphite with the nord tweak. Get it from [here](https://github.com/vinceliuice/Graphite-gtk-theme), and install it with `./install.sh --tweaks nord --libadwaita`
+
+Firefox theme: [Cascade but with the Nord include](https://github.com/cascadefox/cascade)
+ 
+(basically just use cascade but in the repo, before copying the chrome folder, `cp integrations/nord/nord.css chrome/includes/cascade-colours.css`)
