@@ -1,0 +1,125 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+# colorscheme
+#
+# #2E3440
+# #3B4252
+# #434C5E
+# #4C566A
+# #D8DEE9
+# #E5E9F0
+# #ECEFF4
+# #8FBCBB
+# #88C0D0
+# #81A1C1
+# #5E81AC
+# #BF616A
+# #D08770
+# #EBCB8B
+# #A3BE8C
+# #B48EAD
+
+format = """
+$username\
+$directory\
+$git_branch\
+$git_status\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+[\uE0B0 ](fg:#81A1C1 bg:#2E3440)\
+$line_break\
+$character
+"""
+
+[character]
+success_symbol = "[   \uE007  ](bg:#4C566A)[\uE0BC](fg:#4C566A)"
+error_symbol = "[   \uE007  ](bg:#4C566A fg:#BF616A)[\uE0BC](fg:#4C566A)"
+
+# system
+
+[username]
+show_always = true
+style_user = "bg:#4C566A"
+style_root = "bg:#4C566A"
+format = "[ $user ]($style)[\uE0BC](bg:#BF616A fg:#4C566A)"
+
+[directory]
+style = "bg:#BF616A"
+format = "[ $path ]($style)[\uE0BE](bg:#BF616A fg:#D08770)"
+truncate_to_repo = false
+truncation_length = 3
+truncation_symbol = "…/"
+
+# git
+
+[git_branch]
+symbol = "\uE0A0"
+style = "bg:#D08770"
+format = "[[ $symbol $branch ](bg:#D08770)]($style)"
+
+[git_metrics]
+disabled = false
+
+[git_status]
+format = "[($all_status$ahead_behind)]($style)[\uE0BC](bg:#81A1C1 fg:#D08770)"
+style = "bg:#D08770"
+conflicted = "👿 $count "
+ahead = "⇡ $count "
+behind = "⇣ $count "
+diverged = " $count "
+untracked = "🤷 $count "
+stashed = "‍📦 $count "
+modified = "פֿ $count "
+staged = "[ $count ]"
+renamed = " $count "
+deleted = "🗑 $count "
+
+# languages
+
+[c]
+symbol = "© "
+style = "bg:#D8DEE9"
+format = "[[ $symbol ($version) ](bg:#D8DEE9)]($style)"
+
+[elixir]
+symbol = "\uE62D "
+style = "bg:#D8DEE9"
+format = "[[ $symbol ($version) ](bg:#D8DEE9)]($style)"
+
+[elm]
+symbol = "\uE62C "
+style = "bg:#D8DEE9"
+format = "[[ $symbol ($version) ](bg:#D8DEE9)]($style)"
+
+[golang]
+symbol = "\uE627 "
+style = "bg:#81A1C1 fg:#4C566A"
+format = "[ $symbol]($style)"
+
+[haskell]
+symbol = "\uE777 "
+style = "bg:#D8DEE9"
+format = "[[ $symbol($version)](bg:#D8DEE9)]($style)"
+
+[nodejs]
+symbol = "\uE718 "
+style = "bg:#81A1C1 fg:#4C566A"
+format = "[ $symbol]($style)"
+
+[rust]
+symbol = "\uE7A8 "
+style = "bg:#D8DEE9"
+format = "[[ $symbol($version) ](bg:#D8DEE9)]($style)"
+
+[ruby]
+symbol = "\uE739 "
+style = "bg:#D8DEE9"
+format = "[[ $symbol($version) ](bg:#D8DEE9)]($style)"
