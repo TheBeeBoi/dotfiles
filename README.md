@@ -1,5 +1,5 @@
 # yo wassup
-<img src=",/pics.png" />
+<img src="https://github.com/TheBeeBoi/dotfiles/blob/main/pics.png?raw=true" />
 
 these files cant be copied directly, make sure to edit them before fucking your computer
 also install the SpaceMono Nerd Font
