@@ -1,4 +1,6 @@
 # yo wassup
+<img src=",/pics.png" />
+
 these files cant be copied directly, make sure to edit them before fucking your computer
 also install the SpaceMono Nerd Font
 its available on Arch Linux as ttf-space-mono-nerd
